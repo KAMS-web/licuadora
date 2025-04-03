@@ -15,4 +15,15 @@ function controlarLicuadora(){
         licuadora.classList.remove("active");
 
     }
+}
+
+function hacerBrrBrr(){
+    if( sonidoLicuadora.paused){
+        botonLicuadora.onplay();
+        sonidoLicuadora.play();
+    } else {
+        botonLicuadora.play();
+        sonidoLicuadora.pause();
+        sonidoLicuadora.currentTime = 0;
+    }
 } 
